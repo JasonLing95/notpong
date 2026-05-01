@@ -19,3 +19,6 @@ notpong = "notpong.main:run"
 Homepage = "https://github.com/JasonLing95/notpong"
 Repository = "https://github.com/JasonLing95/notpong"
 "Bug Tracker" = "https://github.com/JasonLing95/notpong/issues"
+
+[tool.setuptools.packages.find]
+include = ["notpong*"]

@@ -3,7 +3,9 @@
 A fast-paced, terminal-based Pong clone featuring character-perfect collisions and huge ASCII scores.
 
 ### Demo
-<video src="assets/demo.mp4" controls="controls" width="100%"></video>
+https://github.com/user-attachments/assets/753b9464-eddd-4ad9-99f2-f7e3238f02b4
+
+
 
 ---
 

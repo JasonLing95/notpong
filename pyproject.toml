@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "notpong"
+version = "0.1.0"
+description = "A terminal-based single-player Pong clone."
+readme = {text = "# notpong\nA terminal based pong clone.", content-type = "text/markdown"}
+requires-python = ">=3.8"
+dependencies = [
+    "windows-curses; sys_platform == 'win32'"
+]
+
+[project.scripts]
+notpong = "notpong.main:run"

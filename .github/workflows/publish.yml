@@ -10,6 +10,10 @@ on:
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write
+      contents: read
     
     steps:
       - name: Checkout code
@@ -25,6 +29,3 @@ jobs:
 
       - name: Publish to PyPI
         run: uv publish
-        env:
-          # This securely pulls your PyPI token from GitHub Secrets
-          UV_PUBLISH_TOKEN: ${{ secrets.PYPI_TOKEN }}
